@@ -59,7 +59,7 @@ namespace Presentation.Controllers
         {
             try
             {
-                if (newBook == null)
+                if (newBook is null)
                 {
                     return BadRequest(); // 400
                 }
@@ -77,15 +77,10 @@ namespace Presentation.Controllers
         {
             try
             {
-                if (newBook == null)
+                if (newBook is null)
                 {
                     return BadRequest(); // 400
-                }
-                var book = _manager.BookService.GetBookById(id, true);
-                if (book == null)
-                {
-                    return NotFound(); // 404
-                }
+                }                
                 if (id != newBook.Id)
                 {
                     return BadRequest(); // 400

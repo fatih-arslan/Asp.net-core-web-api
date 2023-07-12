@@ -79,3 +79,6 @@ C:\Users\Fatih\Desktop\bsStoreApp\WebApi\bin\Debug\net6.0\Microsoft.DotNet.Platf
 C:\Users\Fatih\Desktop\bsStoreApp\WebApi\bin\Debug\net6.0\Microsoft.Extensions.DependencyModel.dll
 C:\Users\Fatih\Desktop\bsStoreApp\WebApi\bin\Debug\net6.0\Presentation.dll
 C:\Users\Fatih\Desktop\bsStoreApp\WebApi\bin\Debug\net6.0\Presentation.pdb
+C:\Users\Fatih\Desktop\bsStoreApp\WebApi\bin\Debug\net6.0\NLog.dll
+C:\Users\Fatih\Desktop\bsStoreApp\WebApi\bin\Debug\net6.0\NLog.Extensions.Logging.dll
+C:\Users\Fatih\Desktop\bsStoreApp\WebApi\bin\Debug\net6.0\nlog.config
