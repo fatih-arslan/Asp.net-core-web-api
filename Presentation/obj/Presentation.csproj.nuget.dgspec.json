@@ -256,6 +256,10 @@
             "Nlog.Extensions.Logging": {
               "target": "Package",
               "version": "[5.3.2, )"
+            },
+            "automapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[12.0.1, )"
             }
           },
           "imports": [

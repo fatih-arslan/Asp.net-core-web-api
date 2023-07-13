@@ -1,10 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "B4MAIgnBA4VwSueVt2clCbXcD/7FlhejE4tsexkZESgOSQKriCsgH77ENOok+jm3FBD+Dpuzp2pMj6lf4PyBqg==",
+  "dgSpecHash": "ktbfTa/tQvf/ThZbJHmpOSoUec7hmAJDvw60CXy0HVDVajnGhCLmhxfsWjaRCaz4In5m6X8MLhemjv3uZjx6gA==",
   "success": true,
   "projectFilePath": "C:\\Users\\Fatih\\Desktop\\bsStoreApp\\Services\\Services.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Fatih\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
+    "C:\\Users\\Fatih\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
+    "C:\\Users\\Fatih\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",
+    "C:\\Users\\Fatih\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\Fatih\\.nuget\\packages\\microsoft.data.sqlclient\\2.1.4\\microsoft.data.sqlclient.2.1.4.nupkg.sha512",
     "C:\\Users\\Fatih\\.nuget\\packages\\microsoft.data.sqlclient.sni.runtime\\2.1.1\\microsoft.data.sqlclient.sni.runtime.2.1.1.nupkg.sha512",
     "C:\\Users\\Fatih\\.nuget\\packages\\microsoft.entityframeworkcore\\6.0.10\\microsoft.entityframeworkcore.6.0.10.nupkg.sha512",
