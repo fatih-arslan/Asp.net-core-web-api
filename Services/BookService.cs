@@ -25,43 +25,59 @@ namespace Services
             _mapper = mapper;
         }
 
-        public Book CreateBook(Book book)
+        public async Task<BookDto> CreateBookAsync(BookDtoForInsertion bookDto)
         {
-            _manager.BookRepository.Create(book);
-            _manager.Save();
-            return book;
+            var entity = _mapper.Map<Book>(bookDto);
+            _manager.BookRepository.Create(entity);
+            await _manager.SaveAsync();
+            return _mapper.Map<BookDto>(entity);
         }
 
-        public void DeleteBook(int id, bool trackChanges)
+        public async Task DeleteBookAsync(int id, bool trackChanges)
         {
-            var entity = _manager.BookRepository.GetBook(id, trackChanges);
+            var entity = await _manager.BookRepository.GetBookAsync(id, trackChanges);
             if(entity is null)
             {
                 throw new BookNotFoundException(id);
             }
             _manager.BookRepository.DeleteBook(entity);
-            _manager.Save();
+            await _manager.SaveAsync();
         }
 
-        public IEnumerable<BookDto> GetAllBooks(bool trackChanges)
+        public async Task<IEnumerable<BookDto>> GetAllBooksAsync(bool trackChanges)
         {
-            var books = _manager.BookRepository.GetAllBooks(trackChanges);
+            var books = await _manager.BookRepository.GetAllBooksAsync(trackChanges);
             return _mapper.Map<IEnumerable<BookDto>>(books);
         }
 
-        public Book GetBookById(int id, bool trackChanges)
+        public async Task<BookDto> GetBookByIdAsync(int id, bool trackChanges)
         {
-            var book = _manager.BookRepository.GetBook(id, trackChanges);
+            var book = await _manager.BookRepository.GetBookAsync(id, trackChanges);
             if (book == null)
             {
                 throw new BookNotFoundException(id);
             }
-            return book;
+            return _mapper.Map<BookDto>(book);
         }
 
-        public void UpdateBook(int id, BookDtoForUpdate bookDto, bool trackChanges)
+        public async Task<(BookDtoForUpdate bookDtoForUpdate, Book book)> GetBookForPatchAsync(int id, bool trackChanges)
         {
-            var entity = _manager.BookRepository.GetBook(id, trackChanges);
+            var book = await _manager.BookRepository.GetBookAsync(id, trackChanges);
+            if(book == null) { throw new BookNotFoundException(id); }
+            var bookDtoForUpdate = _mapper.Map<BookDtoForUpdate>(book);
+
+            return (bookDtoForUpdate, book);
+        }
+
+        public async Task SaveChangesForPatchAsync(BookDtoForUpdate bookDtoForUpdate, Book book)
+        {
+            _mapper.Map(bookDtoForUpdate, book);
+            await _manager.SaveAsync();
+        }
+
+        public async Task UpdateBookAsync(int id, BookDtoForUpdate bookDto, bool trackChanges)
+        {
+            var entity = await _manager.BookRepository.GetBookAsync(id, trackChanges);
             if (entity is null)
             {
                 throw new BookNotFoundException(id);
@@ -69,7 +85,7 @@ namespace Services
             if (bookDto is null) { throw new ArgumentNullException(nameof(bookDto)); }
             entity = _mapper.Map<Book>(bookDto);
             _manager.BookRepository.Update(entity);
-            _manager.Save();
+            await _manager.SaveAsync();
         }
     }
 }

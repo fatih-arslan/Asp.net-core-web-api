@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "Kmcq/m0+IgHgdfCZj5IyC0IYIO5ATXCp8wB7g+wF0n4Hy40yKF788sG1NFiHzeJzTbQm6sUjs20JHm8JVHdm8A==",
+  "dgSpecHash": "MqcNToAID+UbGofNaEQArnKzbe/Bx1C+GIAu+GNEVFrLZne4obAYdguKAFMw5USlHdbC8IJNMzZBTzgRlbm+5g==",
   "success": true,
   "projectFilePath": "C:\\Users\\Fatih\\Desktop\\bsStoreApp\\Entities\\Entities.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Fatih\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.14\\microsoft.netcore.app.ref.6.0.14.nupkg.sha512",
+    "C:\\Users\\Fatih\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.14\\microsoft.windowsdesktop.app.ref.6.0.14.nupkg.sha512",
+    "C:\\Users\\Fatih\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.14\\microsoft.aspnetcore.app.ref.6.0.14.nupkg.sha512"
+  ],
   "logs": []
 }
