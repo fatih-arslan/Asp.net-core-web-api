@@ -84,3 +84,4 @@ C:\Users\Fatih\Desktop\bsStoreApp\WebApi\bin\Debug\net6.0\NLog.Extensions.Loggin
 C:\Users\Fatih\Desktop\bsStoreApp\WebApi\bin\Debug\net6.0\nlog.config
 C:\Users\Fatih\Desktop\bsStoreApp\WebApi\bin\Debug\net6.0\AutoMapper.dll
 C:\Users\Fatih\Desktop\bsStoreApp\WebApi\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\Fatih\Desktop\bsStoreApp\WebApi\bin\Debug\net6.0\System.Linq.Dynamic.Core.dll

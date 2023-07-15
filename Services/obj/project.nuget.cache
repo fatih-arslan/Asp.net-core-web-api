@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "4+SHkvhQL4qksrnxMlLkeyvEI9TGG2BKwBd6IB7+s3n/Hf7diNP+R6UP4WAipcftf6ZLZYW8UInL687vVTdRHg==",
+  "dgSpecHash": "FpZlcIgycjki9CWce5CpU+oQZ8nDX+6vlL2aUOGuRQTVIAkEhvjtkqUjQ3htxnNxYeoZCIjzAUjkbqt63j3H+w==",
   "success": true,
   "projectFilePath": "C:\\Users\\Fatih\\Desktop\\bsStoreApp\\Services\\Services.csproj",
   "expectedPackageFiles": [
@@ -39,6 +39,7 @@
     "C:\\Users\\Fatih\\.nuget\\packages\\system.diagnostics.diagnosticsource\\6.0.0\\system.diagnostics.diagnosticsource.6.0.0.nupkg.sha512",
     "C:\\Users\\Fatih\\.nuget\\packages\\system.drawing.common\\4.7.0\\system.drawing.common.4.7.0.nupkg.sha512",
     "C:\\Users\\Fatih\\.nuget\\packages\\system.identitymodel.tokens.jwt\\6.8.0\\system.identitymodel.tokens.jwt.6.8.0.nupkg.sha512",
+    "C:\\Users\\Fatih\\.nuget\\packages\\system.linq.dynamic.core\\1.3.3\\system.linq.dynamic.core.1.3.3.nupkg.sha512",
     "C:\\Users\\Fatih\\.nuget\\packages\\system.runtime.caching\\4.7.0\\system.runtime.caching.4.7.0.nupkg.sha512",
     "C:\\Users\\Fatih\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
     "C:\\Users\\Fatih\\.nuget\\packages\\system.security.accesscontrol\\4.7.0\\system.security.accesscontrol.4.7.0.nupkg.sha512",

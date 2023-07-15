@@ -17,5 +17,7 @@ namespace Entities.RequestFeatures
 			get { return _pageSize; }
 			set { _pageSize = Math.Min(value, maxPagesize); }
 		}
-	}
+
+        public string? OrderBy { get; set; }
+    }
 }
