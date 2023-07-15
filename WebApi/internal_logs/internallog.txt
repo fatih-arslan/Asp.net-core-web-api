@@ -145,3 +145,26 @@
 2023-07-14 23:04:54.2044 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\Fatih\Desktop\bsStoreApp\WebApi\nlog.config
 2023-07-14 23:59:14.7556 Info AppDomain Shutting down. LogFactory closing...
 2023-07-14 23:59:14.7667 Info LogFactory has been closed.
+2023-07-15 17:11:56.7334 Info Message Template Auto Format enabled
+2023-07-15 17:11:56.7983 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2023-07-15 17:11:56.8132 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\Fatih\Desktop\bsStoreApp\WebApi\nlog.config
+2023-07-15 17:12:24.5918 Info AppDomain Shutting down. LogFactory closing...
+2023-07-15 17:12:24.5918 Info LogFactory has been closed.
+2023-07-15 17:12:30.3431 Info Message Template Auto Format enabled
+2023-07-15 17:12:30.3888 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2023-07-15 17:12:30.4049 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\Fatih\Desktop\bsStoreApp\WebApi\nlog.config
+2023-07-15 17:12:53.3353 Info AppDomain Shutting down. LogFactory closing...
+2023-07-15 17:12:53.3448 Info LogFactory has been closed.
+2023-07-15 17:12:56.1809 Info Message Template Auto Format enabled
+2023-07-15 17:12:56.2233 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2023-07-15 17:12:56.2384 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\Fatih\Desktop\bsStoreApp\WebApi\nlog.config
+2023-07-15 17:47:24.7873 Info AppDomain Shutting down. LogFactory closing...
+2023-07-15 17:47:24.8009 Info LogFactory has been closed.
+2023-07-15 17:51:20.3235 Info Message Template Auto Format enabled
+2023-07-15 17:51:20.3730 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2023-07-15 17:51:20.3900 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\Fatih\Desktop\bsStoreApp\WebApi\nlog.config
+2023-07-15 18:01:26.3068 Info AppDomain Shutting down. LogFactory closing...
+2023-07-15 18:01:26.3068 Info LogFactory has been closed.
+2023-07-15 20:53:35.3370 Info Message Template Auto Format enabled
+2023-07-15 20:53:35.3921 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2023-07-15 20:53:35.4076 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\Fatih\Desktop\bsStoreApp\WebApi\nlog.config

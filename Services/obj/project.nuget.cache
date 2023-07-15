@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "ktbfTa/tQvf/ThZbJHmpOSoUec7hmAJDvw60CXy0HVDVajnGhCLmhxfsWjaRCaz4In5m6X8MLhemjv3uZjx6gA==",
+  "dgSpecHash": "4+SHkvhQL4qksrnxMlLkeyvEI9TGG2BKwBd6IB7+s3n/Hf7diNP+R6UP4WAipcftf6ZLZYW8UInL687vVTdRHg==",
   "success": true,
   "projectFilePath": "C:\\Users\\Fatih\\Desktop\\bsStoreApp\\Services\\Services.csproj",
   "expectedPackageFiles": [
@@ -47,7 +47,10 @@
     "C:\\Users\\Fatih\\.nuget\\packages\\system.security.permissions\\4.7.0\\system.security.permissions.4.7.0.nupkg.sha512",
     "C:\\Users\\Fatih\\.nuget\\packages\\system.security.principal.windows\\4.7.0\\system.security.principal.windows.4.7.0.nupkg.sha512",
     "C:\\Users\\Fatih\\.nuget\\packages\\system.text.encoding.codepages\\4.7.0\\system.text.encoding.codepages.4.7.0.nupkg.sha512",
-    "C:\\Users\\Fatih\\.nuget\\packages\\system.windows.extensions\\4.7.0\\system.windows.extensions.4.7.0.nupkg.sha512"
+    "C:\\Users\\Fatih\\.nuget\\packages\\system.windows.extensions\\4.7.0\\system.windows.extensions.4.7.0.nupkg.sha512",
+    "C:\\Users\\Fatih\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.14\\microsoft.netcore.app.ref.6.0.14.nupkg.sha512",
+    "C:\\Users\\Fatih\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.14\\microsoft.windowsdesktop.app.ref.6.0.14.nupkg.sha512",
+    "C:\\Users\\Fatih\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.14\\microsoft.aspnetcore.app.ref.6.0.14.nupkg.sha512"
   ],
   "logs": []
 }

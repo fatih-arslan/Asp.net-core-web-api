@@ -1,4 +1,5 @@
 ﻿using Entities.Models;
+using Entities.RequestFeatures;
 using Microsoft.EntityFrameworkCore;
 using Repositories.Contracts;
 using System;
@@ -9,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace Repositories.EFCore
 {
-    public class BookRepository : RepositoryBase<Book>, IBookRepository
+    public sealed class BookRepository : RepositoryBase<Book>, IBookRepository
     {
         public BookRepository(RepositoryContext context) : base(context)
         {
@@ -20,7 +21,15 @@ namespace Repositories.EFCore
 
         public void DeleteBook(Book book) => Delete(book);
 
-        public async Task<IEnumerable<Book>> GetAllBooksAsync(bool trackChanges) => await GetAll(trackChanges).OrderBy(b => b.Id).ToListAsync();
+        public async Task<PagedList<Book>> GetAllBooksAsync(BookParameters bookParameters, bool trackChanges)
+        {
+            var books = await GetAll(trackChanges)
+                .FilterBooks(bookParameters.MinPrice, bookParameters.MaxPrice)
+                .OrderBy(b => b.Id)
+                .ToListAsync();
+
+            return PagedList<Book>.ToPagedList(books, bookParameters.PageNumber, bookParameters.PageSize);
+        }            
 
         public async Task<Book> GetBookAsync(int id, bool trackChanges) => await GetByCondition(b => b.Id == id, trackChanges).SingleOrDefaultAsync();
 
