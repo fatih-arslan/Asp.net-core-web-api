@@ -23,7 +23,7 @@ namespace Repositories.EFCore
         public void DeleteBook(Book book) => Delete(book);
 
         public async Task<PagedList<Book>> GetAllBooksAsync(BookParameters bookParameters, bool trackChanges)
-        {
+        {            
             var books = await GetAll(trackChanges)
                 .FilterBooks(bookParameters.MinPrice, bookParameters.MaxPrice) // extension method
                 .Search(bookParameters.SearchTerm) // extension method               
