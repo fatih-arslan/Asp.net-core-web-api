@@ -36,6 +36,7 @@ builder.Services.ConfigureCors();
 builder.Services.ConfigureDataShaper();
 builder.Services.AddCustomMediaTypes();
 builder.Services.AddScoped<IBookLinks, BookLinks>();
+builder.Services.ConfigureVersioning();
 
 builder.Services.Configure<ApiBehaviorOptions>(options =>
 {

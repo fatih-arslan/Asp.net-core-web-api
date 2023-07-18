@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "MyKpu2/v1PJsj3pGtqJF7lZBn/pnE9DCxD6n71QGI0QZ4HD7dYb1rgYvL7H7hdSx4+16eC1OBhYpNKKd0YCVnA==",
+  "dgSpecHash": "hjFcmHzK1ltTfZGQ9UfLv3LVL0MdqkHcPmZtW5/ZFroc9XTluQdiTbpEVKAoW2wjoidou3ueDHoWzvusgrd1jQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\Fatih\\Desktop\\bsStoreApp\\Presentation\\Presentation.csproj",
   "expectedPackageFiles": [
@@ -20,6 +20,7 @@
     "C:\\Users\\Fatih\\.nuget\\packages\\microsoft.aspnetcore.mvc.abstractions\\2.2.0\\microsoft.aspnetcore.mvc.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\Fatih\\.nuget\\packages\\microsoft.aspnetcore.mvc.core\\2.2.5\\microsoft.aspnetcore.mvc.core.2.2.5.nupkg.sha512",
     "C:\\Users\\Fatih\\.nuget\\packages\\microsoft.aspnetcore.mvc.newtonsoftjson\\6.0.0\\microsoft.aspnetcore.mvc.newtonsoftjson.6.0.0.nupkg.sha512",
+    "C:\\Users\\Fatih\\.nuget\\packages\\microsoft.aspnetcore.mvc.versioning\\5.1.0\\microsoft.aspnetcore.mvc.versioning.5.1.0.nupkg.sha512",
     "C:\\Users\\Fatih\\.nuget\\packages\\microsoft.aspnetcore.responsecaching.abstractions\\2.2.0\\microsoft.aspnetcore.responsecaching.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\Fatih\\.nuget\\packages\\microsoft.aspnetcore.routing\\2.2.0\\microsoft.aspnetcore.routing.2.2.0.nupkg.sha512",
     "C:\\Users\\Fatih\\.nuget\\packages\\microsoft.aspnetcore.routing.abstractions\\2.2.0\\microsoft.aspnetcore.routing.abstractions.2.2.0.nupkg.sha512",
