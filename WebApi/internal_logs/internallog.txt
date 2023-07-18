@@ -379,3 +379,13 @@
 2023-07-18 21:53:37.5446 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\Fatih\Desktop\bsStoreApp\WebApi\nlog.config
 2023-07-18 21:54:00.7660 Info AppDomain Shutting down. LogFactory closing...
 2023-07-18 21:54:00.7811 Info LogFactory has been closed.
+2023-07-18 22:11:28.8155 Info Message Template Auto Format enabled
+2023-07-18 22:11:28.9042 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2023-07-18 22:11:28.9393 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\Fatih\Desktop\bsStoreApp\WebApi\nlog.config
+2023-07-18 22:12:29.9885 Info AppDomain Shutting down. LogFactory closing...
+2023-07-18 22:12:30.0065 Info LogFactory has been closed.
+2023-07-18 22:14:23.8156 Info Message Template Auto Format enabled
+2023-07-18 22:14:23.8951 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2023-07-18 22:14:23.9254 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\Fatih\Desktop\bsStoreApp\WebApi\nlog.config
+2023-07-18 22:14:51.9910 Info AppDomain Shutting down. LogFactory closing...
+2023-07-18 22:14:51.9910 Info LogFactory has been closed.

@@ -87,3 +87,5 @@ C:\Users\Fatih\Desktop\bsStoreApp\WebApi\bin\Debug\net6.0\AutoMapper.Extensions.
 C:\Users\Fatih\Desktop\bsStoreApp\WebApi\bin\Debug\net6.0\System.Linq.Dynamic.Core.dll
 C:\Users\Fatih\Desktop\bsStoreApp\WebApi\bin\Debug\net6.0\Microsoft.AspNetCore.Mvc.Versioning.dll
 C:\Users\Fatih\Desktop\bsStoreApp\WebApi\bin\Debug\net6.0\Marvin.Cache.Headers.dll
+C:\Users\Fatih\Desktop\bsStoreApp\WebApi\bin\Debug\net6.0\AspNetCoreRateLimit.dll
+C:\Users\Fatih\Desktop\bsStoreApp\WebApi\bin\Debug\net6.0\Microsoft.Extensions.Logging.Abstractions.dll
