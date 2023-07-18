@@ -100,5 +100,12 @@ namespace Presentation.Controllers
             return NoContent(); // 204
             
         }
+
+        [HttpOptions]
+        public IActionResult GetBookOptions()
+        {
+            Response.Headers.Add("Allow", "GET, PUT, POST, PATCH, DELETE, HEAD, OPTIONS");
+            return Ok();
+        }
     }
 }
