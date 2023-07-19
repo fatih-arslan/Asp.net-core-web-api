@@ -2,6 +2,7 @@
 using Entities.Exceptions;
 using Entities.Models;
 using Entities.RequestFeatures;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.JsonPatch;
 using Microsoft.AspNetCore.Mvc;
 using Presentation.ActionFilters;
@@ -34,6 +35,7 @@ namespace Presentation.Controllers
         [HttpGet(Name ="GetAllBooksAsync")]
         [ServiceFilter(typeof(ValidateMediaTypeAttribute))]
         [ResponseCache(Duration = 60)]
+        [Authorize(Roles ="User, Editor, Admin")]
         public async Task<IActionResult> GetAllBooksAsync([FromQuery] BookParameters bookParameters)
         {
             var linkParameters = new LinkParameters
@@ -50,6 +52,7 @@ namespace Presentation.Controllers
                 Ok(result.linkResponse.ShapedEntities);  // 200
         }
 
+        [Authorize(Roles = "User, Editor, Admin")]
         [HttpGet("{id:int}")]
         public async Task<IActionResult> GetBookAsync([FromRoute] int id)
         {                           
@@ -58,6 +61,7 @@ namespace Presentation.Controllers
             
         }
 
+        [Authorize(Roles = "Editor, Admin")]
         [ServiceFilter(typeof(ValidationFilterAttribute))]
         [HttpPost(Name ="AddBookAsync")]
         public async Task<IActionResult> AddBookAsync([FromBody] BookDtoForInsertion bookDto)
@@ -66,6 +70,7 @@ namespace Presentation.Controllers
             return StatusCode(201, book);
         }
 
+        [Authorize(Roles = "Editor, Admin")]
         [ServiceFilter(typeof(ValidationFilterAttribute))]
         [HttpPut("{id:int}")]
         public async Task<IActionResult> UpdateBookAsync([FromRoute] int id, [FromBody] BookDtoForUpdate bookDto)
@@ -74,6 +79,7 @@ namespace Presentation.Controllers
             return NoContent();  // 204          
         }
 
+        [Authorize(Roles = "Editor, Admin")]
         [HttpDelete("{id:int}")]
         public async Task<IActionResult> DeleteBookAsync([FromRoute] int id)
         {
@@ -81,6 +87,7 @@ namespace Presentation.Controllers
             return NoContent(); // 204            
         }
 
+        [Authorize(Roles = "Editor, Admin")]
         [HttpPatch("{id:int}")]
         public async Task<IActionResult> PartiallyUpdateBookAsync([FromRoute(Name = "id")] int id, [FromBody] JsonPatchDocument<BookDtoForUpdate> bookPatch)
         {
@@ -105,6 +112,7 @@ namespace Presentation.Controllers
             
         }
 
+        [Authorize(Roles = "Editor, Admin")]
         [HttpOptions]
         public IActionResult GetBookOptions()
         {
