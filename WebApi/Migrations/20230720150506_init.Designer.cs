@@ -12,8 +12,8 @@ using Repositories.EFCore;
 namespace WebApi.Migrations
 {
     [DbContext(typeof(RepositoryContext))]
-    [Migration("20230718215048_AddRolesToDatabase")]
-    partial class AddRolesToDatabase
+    [Migration("20230720150506_init")]
+    partial class init
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -64,6 +64,40 @@ namespace WebApi.Migrations
                         });
                 });
 
+            modelBuilder.Entity("Entities.Models.Category", b =>
+                {
+                    b.Property<int>("CategoryId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("CategoryId"), 1L, 1);
+
+                    b.Property<string>("CategoryName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("CategoryId");
+
+                    b.ToTable("Categories");
+
+                    b.HasData(
+                        new
+                        {
+                            CategoryId = 1,
+                            CategoryName = "Computer Science"
+                        },
+                        new
+                        {
+                            CategoryId = 2,
+                            CategoryName = "NetWork"
+                        },
+                        new
+                        {
+                            CategoryId = 3,
+                            CategoryName = "Database Management Systems"
+                        });
+                });
+
             modelBuilder.Entity("Entities.Models.User", b =>
                 {
                     b.Property<string>("Id")
@@ -111,6 +145,12 @@ namespace WebApi.Migrations
 
                     b.Property<bool>("PhoneNumberConfirmed")
                         .HasColumnType("bit");
+
+                    b.Property<string>("RefreshToken")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("RefreshTokenExpiryTime")
+                        .HasColumnType("datetime2");
 
                     b.Property<string>("SecurityStamp")
                         .HasColumnType("nvarchar(max)");
@@ -164,22 +204,22 @@ namespace WebApi.Migrations
                     b.HasData(
                         new
                         {
-                            Id = "67de411f-bb97-4f3c-8623-ee87fc4d77b8",
-                            ConcurrencyStamp = "62356948-2ac3-47b5-a46e-102237422e0c",
+                            Id = "5f736d6c-933e-4211-a944-ddfb8f58c7ef",
+                            ConcurrencyStamp = "c2d2752d-9253-4e6a-b83c-45f94e0713d0",
                             Name = "User",
                             NormalizedName = "USER"
                         },
                         new
                         {
-                            Id = "59c4b1a2-ebb5-4fb6-bd5a-f2bef3d389e8",
-                            ConcurrencyStamp = "4f73b560-89f5-44ed-a7c5-b63b09ea6639",
+                            Id = "6ed443df-da17-40ec-a7a0-26d0195d9108",
+                            ConcurrencyStamp = "63fc8dbb-c349-496b-854f-8c6affeb9c09",
                             Name = "Editor",
                             NormalizedName = "EDITOR"
                         },
                         new
                         {
-                            Id = "9b7035a9-fcc6-4ee6-ac7b-c82a6a1ab1e2",
-                            ConcurrencyStamp = "ed042c6d-636a-40f2-a3d8-c5ce2c1535cc",
+                            Id = "cf1646e8-9b57-4408-aa78-16e080a5eccc",
+                            ConcurrencyStamp = "39c2e6d8-302c-4251-95f2-a47e5e29af0b",
                             Name = "Admin",
                             NormalizedName = "ADMIN"
                         });

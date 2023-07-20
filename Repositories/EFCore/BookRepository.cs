@@ -40,6 +40,11 @@ namespace Repositories.EFCore
                 .ToListAsync();
         }
 
+        public async Task<IEnumerable<Book>> GetAllBooksWithDetailsAsync(bool trackChanges)
+        {
+            return await _context.Books.Include(b => b.Category).OrderBy(b => b.Id).ToListAsync();
+        }
+
         public async Task<Book> GetBookAsync(int id, bool trackChanges) => await GetByCondition(b => b.Id == id, trackChanges).SingleOrDefaultAsync();
 
         public void UpdateBook(Book book) => Update(book);

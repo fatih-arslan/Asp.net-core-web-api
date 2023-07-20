@@ -22,6 +22,7 @@ namespace Presentation.Controllers
     [ApiController]
     [Route("api/books")]
     [ResponseCache(CacheProfileName = "5mins")]
+    [ApiExplorerSettings(GroupName = "v1")]
     public class BooksController : ControllerBase
     {
         private readonly IServiceManager _manager;
@@ -50,6 +51,13 @@ namespace Presentation.Controllers
             return result.linkResponse.HasLinks ?
                 Ok(result.linkResponse.LinkedEntities) :  // 200
                 Ok(result.linkResponse.ShapedEntities);  // 200
+        }
+
+        [Authorize]
+        [HttpGet("details")] // api/books/details
+        public async Task<IActionResult> GetAllBooksWithDetails()
+        {
+            return Ok(await _manager.BookService.GetAllBooksWithDetailsAsync(false));
         }
 
         [Authorize(Roles = "User, Editor, Admin")]
