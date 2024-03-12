@@ -1,1 +1,2 @@
 
+This project is an implementation of an ASP.NET Core Web API, designed for learning purposes. It demonstrates how to create an API that handles HTTP requests, performs CRUD operations (Create, Read, Update, Delete) on a sample resource, and returns JSON responses. It also covers the implementation of essential features including pagination, filtering, searching, logging, caching, versioning, authentication, and authorization. 
